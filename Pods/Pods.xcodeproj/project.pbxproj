@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01EDB2CB99F1F1C8CFCD1AA9E0914591 /* HideAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B23E1205BDDB03625D7F34D3BFBA3 /* HideAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		0A60E58D7D15AB48C1D9C2E7FBD02A99 /* LayerStrokeColorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A51ABCEB2847955FE31267FE8E803E /* LayerStrokeColorAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		0D4D19D47A9C5D1C1005DACDDC40F719 /* CubicBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A678D7F97C728DEE1023BB0F7C64F7E4 /* CubicBezier.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		0EC610140664FFD21BCFAD78D982F1B0 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AD2D73C45DC5F8C3D69CA0B926B0ED /* Constraints.swift */; };
+		0ECD1C04A30D68F40A3A3F1A7B9DEA24 /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1BB19A0E5DA57560E773991A5FDBC3 /* Abstraction.swift */; };
+		1000FD0E0F36864783D205CC2779156B /* AnimatedPagingScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD6D78B83BCB987AF2FAD6A000048 /* AnimatedPagingScrollViewController.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		1616CF453D300E4BF1372EFEC3817664 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857066BBC161179A2101FC6877471D87 /* Stack.swift */; };
+		1907C6F1E06300A95F3BBA225016E005 /* PathPositionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094F38519EE512837595C997F53B1D95 /* PathPositionAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		1C8A0E3C9CBBB07796E0C4D867CF8AD9 /* Interpolatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE990096F85979CB7F9E6AE6C123CDB2 /* Interpolatable.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		27B2607E31BAC561E6227A1966768FBC /* TinyConstraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DABA961BCF601E9094628322E9D1595 /* TinyConstraints-dummy.m */; };
+		2F5DA8E350A0FD08F91E4C2CB2690C37 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF969AE60B9AA78D9A68A4A87CADA5F /* Animation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		2FB6A49607E972B6DD6BB6D163A9A5D8 /* ConstraintMultiplierAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDBBBA48063705C729EAEF6C2726114 /* ConstraintMultiplierAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		38987389EFFA4602D5FEBC9AEDAFEC21 /* CornerRadiusAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B27DBEBC17A90DD33E94CC0C5CEB9 /* CornerRadiusAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		4C3C61C3F370AA23C6C3F03F88A2F028 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		5E4F5C876E9B5412B88E8BF3E21C001E /* LayerFillColorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0BC24673896CD35EB4FEA38377950 /* LayerFillColorAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		61131DA74A4002212B68E925553E9260 /* LayerStrokeEndAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FF2C9587EBB1B87BFF982933350CA /* LayerStrokeEndAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		666507040CF5EDF1288F0850D0EDF1F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		707DCD7147D7BEBA3B27F941E23148A3 /* BackgroundColorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CF01ACBD9E63367320A33354C74B33 /* BackgroundColorAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		74BDBE682A081FA38C587604D44892FE /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284744944EF4376CC9AD58320E45FCC9 /* Constrainable.swift */; };
+		7B74C3B18C84BDBED09E885A907A5CD7 /* LayerStrokeStartAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F5EE4505F1F2C6FA609E9A1110B5D /* LayerStrokeStartAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		7BD6787711A221F32BBDC34564F16745 /* Pods-MyShift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D96EFC695EA3A5C3CEBDD596F70C3A5 /* Pods-MyShift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E87C56744234BD578984F9B9455D220 /* LabelTextColorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40EAC19B28E80515FADA459A0395E01 /* LabelTextColorAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		97452D9B152B4135D39E6B916A4ACB56 /* RazzleDazzle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8276C0A4CC1545F54C44B2D8A421DDF /* RazzleDazzle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		975341B1558A3949B2398C50A9E0439B /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F6E486ECB67F57D9B15DDADB98719 /* Animator.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		9EFE627FB229F3876E8096176068D81B /* AlphaAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2387C084402BBA38D165AAD73556C8 /* AlphaAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		A890098BBFF423AF7CC98869252AD6AB /* Pods-MyShift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B730C66F579F1E24FE26CA83019EC1D /* Pods-MyShift-dummy.m */; };
+		B6C9B98EE80C6CAD4027078629A00B07 /* TinyConstraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B6C152957661E3861B14C02216989CD /* TinyConstraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B779FDDE07FF6940857657057D025BA7 /* ConstraintConstantAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C217A7927DB5C8D67914EF735AA42B3F /* ConstraintConstantAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		B8519C60865A7F64CC3A2306C621AB36 /* RazzleDazzle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE28AAE41C6280486345564E8A8FADA /* RazzleDazzle-dummy.m */; };
+		C11CA13E8D8973564140B520A835649E /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD374697A5D162EFE7698F7F950E86A /* Animatable.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		C258AAF3BD4CF5D747E405B4BD000943 /* UIView+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B71B114CFAF20E3AD9288EE5DC5D7 /* UIView+Transform.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		C38FE26BF25CE618C5D0AAF3834C5174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		C546FEA24D826F6DB6ADE24D8056D83C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		C77D07301B70A38299989785B1D27A39 /* Filmstrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CD788AF387D6C703142BF4B7E2CBE /* Filmstrip.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		CD8B2E7F625CDC986C9A4BE38F55DD7A /* TranslationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A8EE7C28A53FB6DE2A61EF8161479 /* TranslationAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		D9D0EF4D3A5017E2BA1012ECD2B32FB8 /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C07061FD9D3151E2E4CCE6E7DD127 /* TinyConstraints.swift */; };
+		DCA4D3CEAA9726BDF39A5496D631822B /* RotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994336909D19FF1F141EE6251453B025 /* RotationAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		E0BC3EE193142DC24384BDF0C77031DA /* ScaleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C52EB2BFEC3E1F6AC6351C961EF721 /* ScaleAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		F784DC634C41195E56DBDAF83B236F71 /* ScrollViewPageConstraintAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F328A2C950BB2659951FAC3F27652 /* ScrollViewPageConstraintAnimation.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		F919DD6EDD6E1476439F64143352CABE /* EasingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024237E9E78BED07C0D962D83836D141 /* EasingFunction.swift */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		FC6F6ABB18863918141F17FDB944D91F /* RazzleDazzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 433A6254D5D2C21F896C3F38082457EA /* RazzleDazzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CB69D46C3CDBE009EC50BEB4B2883F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 234C78452FDC5A36DEFD0C38A1F1EC31;
+			remoteInfo = TinyConstraints;
+		};
+		426CC91AA7A468E827F5AC4ED2D10F78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 651B1EEAFA6C5752F50070A31372CA53;
+			remoteInfo = RazzleDazzle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01CF01ACBD9E63367320A33354C74B33 /* BackgroundColorAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundColorAnimation.swift; path = Source/BackgroundColorAnimation.swift; sourceTree = "<group>"; };
+		024237E9E78BED07C0D962D83836D141 /* EasingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasingFunction.swift; path = Source/EasingFunction.swift; sourceTree = "<group>"; };
+		0879EBDA725E004D5D7CDAE8CDF5BABC /* Pods-MyShift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MyShift.modulemap"; sourceTree = "<group>"; };
+		094F38519EE512837595C997F53B1D95 /* PathPositionAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathPositionAnimation.swift; path = Source/PathPositionAnimation.swift; sourceTree = "<group>"; };
+		0A2387C084402BBA38D165AAD73556C8 /* AlphaAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaAnimation.swift; path = Source/AlphaAnimation.swift; sourceTree = "<group>"; };
+		0B730C66F579F1E24FE26CA83019EC1D /* Pods-MyShift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyShift-dummy.m"; sourceTree = "<group>"; };
+		20A51ABCEB2847955FE31267FE8E803E /* LayerStrokeColorAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerStrokeColorAnimation.swift; path = Source/LayerStrokeColorAnimation.swift; sourceTree = "<group>"; };
+		20C52EB2BFEC3E1F6AC6351C961EF721 /* ScaleAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScaleAnimation.swift; path = Source/ScaleAnimation.swift; sourceTree = "<group>"; };
+		20D0BC24673896CD35EB4FEA38377950 /* LayerFillColorAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerFillColorAnimation.swift; path = Source/LayerFillColorAnimation.swift; sourceTree = "<group>"; };
+		24446F7FA505AE1CAC6251C9E32C24B2 /* TinyConstraints.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.xcconfig; sourceTree = "<group>"; };
+		284744944EF4376CC9AD58320E45FCC9 /* Constrainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrainable.swift; path = TinyConstraints/Classes/Constrainable.swift; sourceTree = "<group>"; };
+		2A1CE01FD053FB180DDE0FDB7ECFDC49 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8F6E486ECB67F57D9B15DDADB98719 /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Source/Animator.swift; sourceTree = "<group>"; };
+		2BD374697A5D162EFE7698F7F950E86A /* Animatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animatable.swift; path = Source/Animatable.swift; sourceTree = "<group>"; };
+		2C0B5BF36617EA4CDDF8EF55BAD3F3D6 /* TinyConstraints.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TinyConstraints.modulemap; sourceTree = "<group>"; };
+		2CDBBBA48063705C729EAEF6C2726114 /* ConstraintMultiplierAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierAnimation.swift; path = Source/ConstraintMultiplierAnimation.swift; sourceTree = "<group>"; };
+		37AD2D73C45DC5F8C3D69CA0B926B0ED /* Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraints.swift; path = TinyConstraints/Classes/Constraints.swift; sourceTree = "<group>"; };
+		38B9625643C9EEFB1573C1DADE4B0BEF /* Pods-MyShift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyShift.debug.xcconfig"; sourceTree = "<group>"; };
+		433A6254D5D2C21F896C3F38082457EA /* RazzleDazzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RazzleDazzle.h; path = Source/RazzleDazzle.h; sourceTree = "<group>"; };
+		485FF5E3BC636546D40D2E00A5CC0089 /* TinyConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TinyConstraints.framework; path = TinyConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B6C152957661E3861B14C02216989CD /* TinyConstraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-umbrella.h"; sourceTree = "<group>"; };
+		4C87CE8C6C8D82DF21E9C3C7F8B0DF3C /* RazzleDazzle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RazzleDazzle-prefix.pch"; sourceTree = "<group>"; };
+		512C41C7AFDF02B0964FE533DCD986F8 /* RazzleDazzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RazzleDazzle.framework; path = RazzleDazzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54CBD2E637DF72568A5571775EA5D04E /* Pods-MyShift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyShift-acknowledgements.plist"; sourceTree = "<group>"; };
+		5D79164568CCEF5A632324B154F4BF91 /* Pods_MyShift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyShift.framework; path = "Pods-MyShift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67991DCDC4CBF56CFA555E4E5DE7EBC6 /* TinyConstraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-prefix.pch"; sourceTree = "<group>"; };
+		6D96EFC695EA3A5C3CEBDD596F70C3A5 /* Pods-MyShift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyShift-umbrella.h"; sourceTree = "<group>"; };
+		6F1BB19A0E5DA57560E773991A5FDBC3 /* Abstraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Abstraction.swift; path = TinyConstraints/Classes/Abstraction.swift; sourceTree = "<group>"; };
+		711F5EE4505F1F2C6FA609E9A1110B5D /* LayerStrokeStartAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerStrokeStartAnimation.swift; path = Source/LayerStrokeStartAnimation.swift; sourceTree = "<group>"; };
+		745C07061FD9D3151E2E4CCE6E7DD127 /* TinyConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyConstraints.swift; path = TinyConstraints/Classes/TinyConstraints.swift; sourceTree = "<group>"; };
+		775A8EE7C28A53FB6DE2A61EF8161479 /* TranslationAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TranslationAnimation.swift; path = Source/TranslationAnimation.swift; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		80607658F18B5F4D68CB1AEE3E6BBF2B /* Pods-MyShift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyShift-resources.sh"; sourceTree = "<group>"; };
+		857066BBC161179A2101FC6877471D87 /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = TinyConstraints/Classes/Stack.swift; sourceTree = "<group>"; };
+		8DABA961BCF601E9094628322E9D1595 /* TinyConstraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinyConstraints-dummy.m"; sourceTree = "<group>"; };
+		8EF969AE60B9AA78D9A68A4A87CADA5F /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = Source/Animation.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		994336909D19FF1F141EE6251453B025 /* RotationAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotationAnimation.swift; path = Source/RotationAnimation.swift; sourceTree = "<group>"; };
+		99A55E2161784604CC9589B26305CC3B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D50AB0AF20B7CFEE01C16975B94039B /* Pods-MyShift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyShift-frameworks.sh"; sourceTree = "<group>"; };
+		A41B27DBEBC17A90DD33E94CC0C5CEB9 /* CornerRadiusAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CornerRadiusAnimation.swift; path = Source/CornerRadiusAnimation.swift; sourceTree = "<group>"; };
+		A5A0E7B06477BE6D6CCC3EDF76D9F44D /* Pods-MyShift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyShift.release.xcconfig"; sourceTree = "<group>"; };
+		A678D7F97C728DEE1023BB0F7C64F7E4 /* CubicBezier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CubicBezier.swift; path = Source/CubicBezier.swift; sourceTree = "<group>"; };
+		AC5B23E1205BDDB03625D7F34D3BFBA3 /* HideAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HideAnimation.swift; path = Source/HideAnimation.swift; sourceTree = "<group>"; };
+		C217A7927DB5C8D67914EF735AA42B3F /* ConstraintConstantAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantAnimation.swift; path = Source/ConstraintConstantAnimation.swift; sourceTree = "<group>"; };
+		CACA2D63A07156FB82665E39B72A832B /* Pods-MyShift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyShift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CFAAD6D78B83BCB987AF2FAD6A000048 /* AnimatedPagingScrollViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedPagingScrollViewController.swift; path = Source/AnimatedPagingScrollViewController.swift; sourceTree = "<group>"; };
+		D34FF2C9587EBB1B87BFF982933350CA /* LayerStrokeEndAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerStrokeEndAnimation.swift; path = Source/LayerStrokeEndAnimation.swift; sourceTree = "<group>"; };
+		DD43BC3ECFF5B22245C883BFEEDE4B89 /* RazzleDazzle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RazzleDazzle.modulemap; sourceTree = "<group>"; };
+		E40EAC19B28E80515FADA459A0395E01 /* LabelTextColorAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelTextColorAnimation.swift; path = Source/LabelTextColorAnimation.swift; sourceTree = "<group>"; };
+		E5A26F97F2CC9913C72B0706093DABDD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8276C0A4CC1545F54C44B2D8A421DDF /* RazzleDazzle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RazzleDazzle-umbrella.h"; sourceTree = "<group>"; };
+		EA3B71B114CFAF20E3AD9288EE5DC5D7 /* UIView+Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Transform.swift"; path = "Source/UIView+Transform.swift"; sourceTree = "<group>"; };
+		EE990096F85979CB7F9E6AE6C123CDB2 /* Interpolatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpolatable.swift; path = Source/Interpolatable.swift; sourceTree = "<group>"; };
+		EEE28AAE41C6280486345564E8A8FADA /* RazzleDazzle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RazzleDazzle-dummy.m"; sourceTree = "<group>"; };
+		EF5F328A2C950BB2659951FAC3F27652 /* ScrollViewPageConstraintAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollViewPageConstraintAnimation.swift; path = Source/ScrollViewPageConstraintAnimation.swift; sourceTree = "<group>"; };
+		F4F22B53592F27DC59D0004BD1D521F2 /* RazzleDazzle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RazzleDazzle.xcconfig; sourceTree = "<group>"; };
+		FF3CD788AF387D6C703142BF4B7E2CBE /* Filmstrip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filmstrip.swift; path = Source/Filmstrip.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4749BE21CE9BE1D81290074F17E43ADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				666507040CF5EDF1288F0850D0EDF1F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FDE749B87A40F0DA3B613B4AFF5991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C38FE26BF25CE618C5D0AAF3834C5174 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8CD8E4AA66F04FC2E6B35F3DD8AAE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3C61C3F370AA23C6C3F03F88A2F028 /* Foundation.framework in Frameworks */,
+				C546FEA24D826F6DB6ADE24D8056D83C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11AA6890FA5110D52D487FF2CF719318 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5A26F97F2CC9913C72B0706093DABDD /* Info.plist */,
+				DD43BC3ECFF5B22245C883BFEEDE4B89 /* RazzleDazzle.modulemap */,
+				F4F22B53592F27DC59D0004BD1D521F2 /* RazzleDazzle.xcconfig */,
+				EEE28AAE41C6280486345564E8A8FADA /* RazzleDazzle-dummy.m */,
+				4C87CE8C6C8D82DF21E9C3C7F8B0DF3C /* RazzleDazzle-prefix.pch */,
+				E8276C0A4CC1545F54C44B2D8A421DDF /* RazzleDazzle-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RazzleDazzle";
+			sourceTree = "<group>";
+		};
+		14F80C211130EC761F6B77E29ED61EBB /* Pods-MyShift */ = {
+			isa = PBXGroup;
+			children = (
+				99A55E2161784604CC9589B26305CC3B /* Info.plist */,
+				0879EBDA725E004D5D7CDAE8CDF5BABC /* Pods-MyShift.modulemap */,
+				CACA2D63A07156FB82665E39B72A832B /* Pods-MyShift-acknowledgements.markdown */,
+				54CBD2E637DF72568A5571775EA5D04E /* Pods-MyShift-acknowledgements.plist */,
+				0B730C66F579F1E24FE26CA83019EC1D /* Pods-MyShift-dummy.m */,
+				9D50AB0AF20B7CFEE01C16975B94039B /* Pods-MyShift-frameworks.sh */,
+				80607658F18B5F4D68CB1AEE3E6BBF2B /* Pods-MyShift-resources.sh */,
+				6D96EFC695EA3A5C3CEBDD596F70C3A5 /* Pods-MyShift-umbrella.h */,
+				38B9625643C9EEFB1573C1DADE4B0BEF /* Pods-MyShift.debug.xcconfig */,
+				A5A0E7B06477BE6D6CCC3EDF76D9F44D /* Pods-MyShift.release.xcconfig */,
+			);
+			name = "Pods-MyShift";
+			path = "Target Support Files/Pods-MyShift";
+			sourceTree = "<group>";
+		};
+		21090ED4CD5B9C15CEB4AC611877DBCA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14F80C211130EC761F6B77E29ED61EBB /* Pods-MyShift */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		440293E435961BCF75D9428FB2652B45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D79164568CCEF5A632324B154F4BF91 /* Pods_MyShift.framework */,
+				512C41C7AFDF02B0964FE533DCD986F8 /* RazzleDazzle.framework */,
+				485FF5E3BC636546D40D2E00A5CC0089 /* TinyConstraints.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		658D55A66DB04A6D922BDF380995CC81 /* TinyConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				6F1BB19A0E5DA57560E773991A5FDBC3 /* Abstraction.swift */,
+				284744944EF4376CC9AD58320E45FCC9 /* Constrainable.swift */,
+				37AD2D73C45DC5F8C3D69CA0B926B0ED /* Constraints.swift */,
+				857066BBC161179A2101FC6877471D87 /* Stack.swift */,
+				745C07061FD9D3151E2E4CCE6E7DD127 /* TinyConstraints.swift */,
+				DB78B9AB2BB98479FD7031007BAF7890 /* Support Files */,
+			);
+			name = TinyConstraints;
+			path = TinyConstraints;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				C32111742626157D9DB6F1942FE27099 /* Pods */,
+				440293E435961BCF75D9428FB2652B45 /* Products */,
+				21090ED4CD5B9C15CEB4AC611877DBCA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		956C13EA3E703C690D88C3921592482D /* RazzleDazzle */ = {
+			isa = PBXGroup;
+			children = (
+				0A2387C084402BBA38D165AAD73556C8 /* AlphaAnimation.swift */,
+				2BD374697A5D162EFE7698F7F950E86A /* Animatable.swift */,
+				CFAAD6D78B83BCB987AF2FAD6A000048 /* AnimatedPagingScrollViewController.swift */,
+				8EF969AE60B9AA78D9A68A4A87CADA5F /* Animation.swift */,
+				2A8F6E486ECB67F57D9B15DDADB98719 /* Animator.swift */,
+				01CF01ACBD9E63367320A33354C74B33 /* BackgroundColorAnimation.swift */,
+				C217A7927DB5C8D67914EF735AA42B3F /* ConstraintConstantAnimation.swift */,
+				2CDBBBA48063705C729EAEF6C2726114 /* ConstraintMultiplierAnimation.swift */,
+				A41B27DBEBC17A90DD33E94CC0C5CEB9 /* CornerRadiusAnimation.swift */,
+				A678D7F97C728DEE1023BB0F7C64F7E4 /* CubicBezier.swift */,
+				024237E9E78BED07C0D962D83836D141 /* EasingFunction.swift */,
+				FF3CD788AF387D6C703142BF4B7E2CBE /* Filmstrip.swift */,
+				AC5B23E1205BDDB03625D7F34D3BFBA3 /* HideAnimation.swift */,
+				EE990096F85979CB7F9E6AE6C123CDB2 /* Interpolatable.swift */,
+				E40EAC19B28E80515FADA459A0395E01 /* LabelTextColorAnimation.swift */,
+				20D0BC24673896CD35EB4FEA38377950 /* LayerFillColorAnimation.swift */,
+				20A51ABCEB2847955FE31267FE8E803E /* LayerStrokeColorAnimation.swift */,
+				D34FF2C9587EBB1B87BFF982933350CA /* LayerStrokeEndAnimation.swift */,
+				711F5EE4505F1F2C6FA609E9A1110B5D /* LayerStrokeStartAnimation.swift */,
+				094F38519EE512837595C997F53B1D95 /* PathPositionAnimation.swift */,
+				433A6254D5D2C21F896C3F38082457EA /* RazzleDazzle.h */,
+				994336909D19FF1F141EE6251453B025 /* RotationAnimation.swift */,
+				20C52EB2BFEC3E1F6AC6351C961EF721 /* ScaleAnimation.swift */,
+				EF5F328A2C950BB2659951FAC3F27652 /* ScrollViewPageConstraintAnimation.swift */,
+				775A8EE7C28A53FB6DE2A61EF8161479 /* TranslationAnimation.swift */,
+				EA3B71B114CFAF20E3AD9288EE5DC5D7 /* UIView+Transform.swift */,
+				11AA6890FA5110D52D487FF2CF719318 /* Support Files */,
+			);
+			name = RazzleDazzle;
+			path = RazzleDazzle;
+			sourceTree = "<group>";
+		};
+		C32111742626157D9DB6F1942FE27099 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				956C13EA3E703C690D88C3921592482D /* RazzleDazzle */,
+				658D55A66DB04A6D922BDF380995CC81 /* TinyConstraints */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB78B9AB2BB98479FD7031007BAF7890 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A1CE01FD053FB180DDE0FDB7ECFDC49 /* Info.plist */,
+				2C0B5BF36617EA4CDDF8EF55BAD3F3D6 /* TinyConstraints.modulemap */,
+				24446F7FA505AE1CAC6251C9E32C24B2 /* TinyConstraints.xcconfig */,
+				8DABA961BCF601E9094628322E9D1595 /* TinyConstraints-dummy.m */,
+				67991DCDC4CBF56CFA555E4E5DE7EBC6 /* TinyConstraints-prefix.pch */,
+				4B6C152957661E3861B14C02216989CD /* TinyConstraints-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TinyConstraints";
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		19E166C0F9B9A5182C53A721CBBC8096 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C9B98EE80C6CAD4027078629A00B07 /* TinyConstraints-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4620F05334E35C3595D3B751A25F3851 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97452D9B152B4135D39E6B916A4ACB56 /* RazzleDazzle-umbrella.h in Headers */,
+				FC6F6ABB18863918141F17FDB944D91F /* RazzleDazzle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEFCC2DE0089ECD3C518FB0A6113BFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD6787711A221F32BBDC34564F16745 /* Pods-MyShift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		234C78452FDC5A36DEFD0C38A1F1EC31 /* TinyConstraints */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BAF8CA763260DABDF1DFD2CF34F704C /* Build configuration list for PBXNativeTarget "TinyConstraints" */;
+			buildPhases = (
+				FA406934522B0A8EA445EE952D7727C2 /* Sources */,
+				D6FDE749B87A40F0DA3B613B4AFF5991 /* Frameworks */,
+				19E166C0F9B9A5182C53A721CBBC8096 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyConstraints;
+			productName = TinyConstraints;
+			productReference = 485FF5E3BC636546D40D2E00A5CC0089 /* TinyConstraints.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		651B1EEAFA6C5752F50070A31372CA53 /* RazzleDazzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A67C6EE4A4F778766971EED6DC9965D /* Build configuration list for PBXNativeTarget "RazzleDazzle" */;
+			buildPhases = (
+				5B727B145784F0EC63E33D525B54D1B1 /* Sources */,
+				D8CD8E4AA66F04FC2E6B35F3DD8AAE4E /* Frameworks */,
+				4620F05334E35C3595D3B751A25F3851 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RazzleDazzle;
+			productName = RazzleDazzle;
+			productReference = 512C41C7AFDF02B0964FE533DCD986F8 /* RazzleDazzle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4445687EC38F22B1B7729F28DE01AA7 /* Pods-MyShift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D2E289B1779719DCD38DBD4621A3D9A /* Build configuration list for PBXNativeTarget "Pods-MyShift" */;
+			buildPhases = (
+				474542241ECF65D890F9211EEEA3D12F /* Sources */,
+				4749BE21CE9BE1D81290074F17E43ADC /* Frameworks */,
+				CBEFCC2DE0089ECD3C518FB0A6113BFD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD51D18F2B83BD1D50ECB1820139C803 /* PBXTargetDependency */,
+				D7ACB0F3CD52ADE350CFC72140B3F099 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyShift";
+			productName = "Pods-MyShift";
+			productReference = 5D79164568CCEF5A632324B154F4BF91 /* Pods_MyShift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 440293E435961BCF75D9428FB2652B45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4445687EC38F22B1B7729F28DE01AA7 /* Pods-MyShift */,
+				651B1EEAFA6C5752F50070A31372CA53 /* RazzleDazzle */,
+				234C78452FDC5A36DEFD0C38A1F1EC31 /* TinyConstraints */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		474542241ECF65D890F9211EEEA3D12F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A890098BBFF423AF7CC98869252AD6AB /* Pods-MyShift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B727B145784F0EC63E33D525B54D1B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFE627FB229F3876E8096176068D81B /* AlphaAnimation.swift in Sources */,
+				C11CA13E8D8973564140B520A835649E /* Animatable.swift in Sources */,
+				1000FD0E0F36864783D205CC2779156B /* AnimatedPagingScrollViewController.swift in Sources */,
+				2F5DA8E350A0FD08F91E4C2CB2690C37 /* Animation.swift in Sources */,
+				975341B1558A3949B2398C50A9E0439B /* Animator.swift in Sources */,
+				707DCD7147D7BEBA3B27F941E23148A3 /* BackgroundColorAnimation.swift in Sources */,
+				B779FDDE07FF6940857657057D025BA7 /* ConstraintConstantAnimation.swift in Sources */,
+				2FB6A49607E972B6DD6BB6D163A9A5D8 /* ConstraintMultiplierAnimation.swift in Sources */,
+				38987389EFFA4602D5FEBC9AEDAFEC21 /* CornerRadiusAnimation.swift in Sources */,
+				0D4D19D47A9C5D1C1005DACDDC40F719 /* CubicBezier.swift in Sources */,
+				F919DD6EDD6E1476439F64143352CABE /* EasingFunction.swift in Sources */,
+				C77D07301B70A38299989785B1D27A39 /* Filmstrip.swift in Sources */,
+				01EDB2CB99F1F1C8CFCD1AA9E0914591 /* HideAnimation.swift in Sources */,
+				1C8A0E3C9CBBB07796E0C4D867CF8AD9 /* Interpolatable.swift in Sources */,
+				8E87C56744234BD578984F9B9455D220 /* LabelTextColorAnimation.swift in Sources */,
+				5E4F5C876E9B5412B88E8BF3E21C001E /* LayerFillColorAnimation.swift in Sources */,
+				0A60E58D7D15AB48C1D9C2E7FBD02A99 /* LayerStrokeColorAnimation.swift in Sources */,
+				61131DA74A4002212B68E925553E9260 /* LayerStrokeEndAnimation.swift in Sources */,
+				7B74C3B18C84BDBED09E885A907A5CD7 /* LayerStrokeStartAnimation.swift in Sources */,
+				1907C6F1E06300A95F3BBA225016E005 /* PathPositionAnimation.swift in Sources */,
+				B8519C60865A7F64CC3A2306C621AB36 /* RazzleDazzle-dummy.m in Sources */,
+				DCA4D3CEAA9726BDF39A5496D631822B /* RotationAnimation.swift in Sources */,
+				E0BC3EE193142DC24384BDF0C77031DA /* ScaleAnimation.swift in Sources */,
+				F784DC634C41195E56DBDAF83B236F71 /* ScrollViewPageConstraintAnimation.swift in Sources */,
+				CD8B2E7F625CDC986C9A4BE38F55DD7A /* TranslationAnimation.swift in Sources */,
+				C258AAF3BD4CF5D747E405B4BD000943 /* UIView+Transform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA406934522B0A8EA445EE952D7727C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ECD1C04A30D68F40A3A3F1A7B9DEA24 /* Abstraction.swift in Sources */,
+				74BDBE682A081FA38C587604D44892FE /* Constrainable.swift in Sources */,
+				0EC610140664FFD21BCFAD78D982F1B0 /* Constraints.swift in Sources */,
+				1616CF453D300E4BF1372EFEC3817664 /* Stack.swift in Sources */,
+				27B2607E31BAC561E6227A1966768FBC /* TinyConstraints-dummy.m in Sources */,
+				D9D0EF4D3A5017E2BA1012ECD2B32FB8 /* TinyConstraints.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7ACB0F3CD52ADE350CFC72140B3F099 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 234C78452FDC5A36DEFD0C38A1F1EC31 /* TinyConstraints */;
+			targetProxy = 0CB69D46C3CDBE009EC50BEB4B2883F5 /* PBXContainerItemProxy */;
+		};
+		DD51D18F2B83BD1D50ECB1820139C803 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RazzleDazzle;
+			target = 651B1EEAFA6C5752F50070A31372CA53 /* RazzleDazzle */;
+			targetProxy = 426CC91AA7A468E827F5AC4ED2D10F78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C4392B2BBAE034DC567B8DEB5A2E193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4F22B53592F27DC59D0004BD1D521F2 /* RazzleDazzle.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RazzleDazzle/RazzleDazzle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RazzleDazzle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RazzleDazzle/RazzleDazzle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RazzleDazzle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BFEF7B75AA0AE50E42D1A40F6FC6A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24446F7FA505AE1CAC6251C9E32C24B2 /* TinyConstraints.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		428DCE4B2E2B834A7B0A6FE17332B8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4F22B53592F27DC59D0004BD1D521F2 /* RazzleDazzle.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RazzleDazzle/RazzleDazzle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RazzleDazzle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RazzleDazzle/RazzleDazzle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RazzleDazzle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		75830BAE0B558E57C0404971E68686F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5A0E7B06477BE6D6CCC3EDF76D9F44D /* Pods-MyShift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MyShift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyShift/Pods-MyShift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MyShift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D7933AD619E16D76F7F5CBED4DC1F0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24446F7FA505AE1CAC6251C9E32C24B2 /* TinyConstraints.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFC25E40FBB011CCAC9B054B5F851B99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38B9625643C9EEFB1573C1DADE4B0BEF /* Pods-MyShift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MyShift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyShift/Pods-MyShift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MyShift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BAF8CA763260DABDF1DFD2CF34F704C /* Build configuration list for PBXNativeTarget "TinyConstraints" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7933AD619E16D76F7F5CBED4DC1F0C0 /* Debug */,
+				3BFEF7B75AA0AE50E42D1A40F6FC6A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D2E289B1779719DCD38DBD4621A3D9A /* Build configuration list for PBXNativeTarget "Pods-MyShift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC25E40FBB011CCAC9B054B5F851B99 /* Debug */,
+				75830BAE0B558E57C0404971E68686F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A67C6EE4A4F778766971EED6DC9965D /* Build configuration list for PBXNativeTarget "RazzleDazzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C4392B2BBAE034DC567B8DEB5A2E193 /* Debug */,
+				428DCE4B2E2B834A7B0A6FE17332B8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
