@@ -49,6 +49,8 @@ class ViewController: AnimatedPagingScrollViewController {
         contentView.addSubview(minicooper)
         contentView.addSubview(porsche)
         contentView.addSubview(prius)
+        setupLabels()
+
   /*      contentView.addSubview(logo)
         contentView.addSubview(wheel)
         contentView.addSubview(backdrop)
@@ -74,7 +76,6 @@ class ViewController: AnimatedPagingScrollViewController {
         configureScrollView()
     //    configureIFTTTPresents()
         configureCars()
-        setupLabels()
         
         animateCurrentFrame()
     }
@@ -82,12 +83,11 @@ class ViewController: AnimatedPagingScrollViewController {
     private func configureCars() {
         // Keep IFTTTPresents centered on pages 0 and 1, offset 20 pixels down from the top of the view
   //      minicooper.centerXAnchor.constraint(equalTo: contentView.centerXAnchor, constant: 0)
-   //     minicooper.topAnchor.constraint(equalTo: contentView.centerYAnchor, constant: -150)
+       minicooper.topAnchor.constraint(equalTo: contentView.centerYAnchor, constant: -150).isActive = true
   //      porsche.centerXAnchor.constraint(equalTo: contentView.centerXAnchor, constant: 0)
-    //    porsche.topAnchor.constraint(equalTo: contentView.centerYAnchor, constant: 0)
+       porsche.topAnchor.constraint(equalTo: contentView.centerYAnchor, constant: 0).isActive = true
    //     prius.centerXAnchor.constraint(equalTo: contentView.centerXAnchor, constant: 0)
-     //   prius.topAnchor.constraint(equalTo: contentView.centerYAnchor, constant: 150)
-        
+        prius.topAnchor.constraint(equalTo: contentView.centerYAnchor, constant: 150).isActive = true
         contentView.layer.borderColor=UIColor.red.cgColor
         contentView.layer.borderWidth=1
         
@@ -96,9 +96,9 @@ class ViewController: AnimatedPagingScrollViewController {
 
         
        
-        keepView(minicooper, onPages: [0])
-        keepView(porsche, onPages: [0, 1])
-        keepView(prius, onPages: [0])
+        keepView(minicooper, onPages: [1])
+        keepView(porsche, onPages: [1])
+        keepView(prius, onPages: [1])
 
         // Hide IFTTTPresents when we get to page 1
         let cooperPosAnimation = HideAnimation(view: minicooper, hideAt: 1)
@@ -106,10 +106,12 @@ class ViewController: AnimatedPagingScrollViewController {
         
         
         let porschePosAnimation = TranslationAnimation(view: porsche)
-        porschePosAnimation[1] = CGPoint(x: 5, y: 15)
+        porschePosAnimation[0.5] = CGPoint(x: -100, y: 0)
+        porschePosAnimation[1.5] = CGPoint(x: 0, y: 150)
         animator.addAnimation(porschePosAnimation)
         let priusPosAnimation = RotationAnimation(view: prius)
-         priusPosAnimation[1] = 90
+        priusPosAnimation[0.5] = 0
+         priusPosAnimation[1.5] = 90
         animator.addAnimation(priusPosAnimation)
     }
     
@@ -117,18 +119,21 @@ class ViewController: AnimatedPagingScrollViewController {
     func setupLabels() {
         let oneLabel = label(from: "全球精品呈现",
                                   and: "一手掌握全球免税商品动态")
+        oneLabel.translatesAutoresizingMaskIntoConstraints = false
+        oneLabel.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor).isActive = true
         
         keepView(oneLabel, onPage: 0)
         
         
         let twoLabel = label(from: "航旅带货新体验",
                                   and: "共享行李箱 让出行更有价值")
+        twoLabel.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor).isActive = true
         
         keepView(twoLabel, onPage: 1)
         
-        
         let threeLabel = label(from: "最快物流速度",
                                     and: "72小时全球真人带货 货真价实")
+        threeLabel.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor).isActive = true
         
         keepView(threeLabel, onPage: 2)
         
@@ -138,7 +143,7 @@ class ViewController: AnimatedPagingScrollViewController {
         
         button.layer.cornerRadius = 12
         button.layer.masksToBounds = true
-        button.topAnchor.constraint(equalTo: threeLabel.bottomAnchor, constant: 20)
+        button.topAnchor.constraint(equalTo: threeLabel.bottomAnchor, constant: 20).isActive = true
         button.frame = CGRect(x: 0, y: 0, width: 136, height: 34)
         
         
@@ -150,7 +155,7 @@ class ViewController: AnimatedPagingScrollViewController {
         contentView.addSubview(bottomLabel)
         
         bottomLabel.text = "FlyGO © izhiyou.com"
-        bottomLabel.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -20)
+        bottomLabel.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -20).isActive = true
     
         
         keepView(bottomLabel, onPages: [-1, 0, 1, 2, 3])
