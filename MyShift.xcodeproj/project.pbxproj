@@ -14,6 +14,8 @@
 		FA03098A1EA591E60004A14E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0309891EA591E60004A14E /* Assets.xcassets */; };
 		FA03098D1EA591E60004A14E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA03098B1EA591E60004A14E /* LaunchScreen.storyboard */; };
 		FA0309951EA5C18C0004A14E /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0309941EA5C18C0004A14E /* Extention.swift */; };
+		FAC6958D1EA6D09000F5C3B1 /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6958C1EA6D09000F5C3B1 /* NSAttributedString+Extension.swift */; };
+		FAC6958F1EA6D1A900F5C3B1 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6958E1EA6D1A900F5C3B1 /* ViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FA03098C1EA591E60004A14E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA03098E1EA591E60004A14E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA0309941EA5C18C0004A14E /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		FAC6958C1EA6D09000F5C3B1 /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		FAC6958E1EA6D1A900F5C3B1 /* ViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				FA0309821EA591E60004A14E /* AppDelegate.swift */,
 				FA0309841EA591E60004A14E /* ViewController.swift */,
 				FA0309861EA591E60004A14E /* Main.storyboard */,
+				FAC6958C1EA6D09000F5C3B1 /* NSAttributedString+Extension.swift */,
+				FAC6958E1EA6D1A900F5C3B1 /* ViewFactory.swift */,
 				FA0309941EA5C18C0004A14E /* Extention.swift */,
 				FA0309891EA591E60004A14E /* Assets.xcassets */,
 				FA03098B1EA591E60004A14E /* LaunchScreen.storyboard */,
@@ -216,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0309851EA591E60004A14E /* ViewController.swift in Sources */,
+				FAC6958D1EA6D09000F5C3B1 /* NSAttributedString+Extension.swift in Sources */,
+				FAC6958F1EA6D1A900F5C3B1 /* ViewFactory.swift in Sources */,
 				FA0309951EA5C18C0004A14E /* Extention.swift in Sources */,
 				FA0309831EA591E60004A14E /* AppDelegate.swift in Sources */,
 			);

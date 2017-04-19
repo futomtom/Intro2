@@ -1,15 +1,15 @@
 PODS:
+  - EZSwiftExtensions (1.9)
   - RazzleDazzle (0.1.5)
-  - TinyConstraints (2.0.0)
 
 DEPENDENCIES:
+  - EZSwiftExtensions
   - RazzleDazzle
-  - TinyConstraints
 
 SPEC CHECKSUMS:
+  EZSwiftExtensions: ce22bf6fc5c6e7c883fec413300b006e123735d0
   RazzleDazzle: 0b1b9fc8ceed04bfdd4b3e8182e98ef7edacd1d1
-  TinyConstraints: c8f3c34a90aa2a5b6960dcff5cc6a69e8938cf1b
 
-PODFILE CHECKSUM: ae2db1f6695dd6cab48495eed1cb3cd74b8b656f
+PODFILE CHECKSUM: c781920f1a63b80ae8c853eb9234e54c35c7df3b
 
 COCOAPODS: 1.1.1

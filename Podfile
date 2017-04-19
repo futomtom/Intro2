@@ -7,5 +7,5 @@ target 'MyShift' do
 
   # Pods for MyShift
 	pod "RazzleDazzle"
-	pod "TinyConstraints"
+	pod 'EZSwiftExtensions'
 end
