@@ -17,7 +17,7 @@ class ViewFactory {
     
     static func label(font:UIFont,
                       textColor:UIColor,
-                      backgroudColor:UIColor? = .white) -> UILabel {
+                      backgroudColor:UIColor? = .clear) -> UILabel {
         let label = UILabel()
         
         label.font = font
@@ -91,7 +91,7 @@ extension ViewFactory {
     
     static func grayButton(title:String) -> UIButton {
         let grayButton = UIButton(type: .custom)
-        
+        grayButton.translatesAutoresizingMaskIntoConstraints = false
         grayButton.setTitle(title,
                            for: .normal)
         

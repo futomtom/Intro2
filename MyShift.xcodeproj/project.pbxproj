@@ -14,6 +14,7 @@
 		FA03098A1EA591E60004A14E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0309891EA591E60004A14E /* Assets.xcassets */; };
 		FA03098D1EA591E60004A14E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA03098B1EA591E60004A14E /* LaunchScreen.storyboard */; };
 		FA0309951EA5C18C0004A14E /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0309941EA5C18C0004A14E /* Extention.swift */; };
+		FA6D76431EA7DEA6000E44E6 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6D76421EA7DEA6000E44E6 /* RevealServer.framework */; };
 		FAC6958D1EA6D09000F5C3B1 /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6958C1EA6D09000F5C3B1 /* NSAttributedString+Extension.swift */; };
 		FAC6958F1EA6D1A900F5C3B1 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6958E1EA6D1A900F5C3B1 /* ViewFactory.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		FA03098C1EA591E60004A14E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA03098E1EA591E60004A14E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA0309941EA5C18C0004A14E /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		FA6D76421EA7DEA6000E44E6 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevealServer.framework; sourceTree = "<group>"; };
 		FAC6958C1EA6D09000F5C3B1 /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		FAC6958E1EA6D1A900F5C3B1 /* ViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6D76431EA7DEA6000E44E6 /* RevealServer.framework in Frameworks */,
 				4B803362CFED6D5269903DD2 /* Pods_MyShift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +52,7 @@
 		A2818F03BA4F14792A39F761 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA6D76421EA7DEA6000E44E6 /* RevealServer.framework */,
 				963DB0180E142961471EA52B /* Pods_MyShift.framework */,
 			);
 			name = Frameworks;
@@ -350,8 +354,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6A7K9VGHXX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyShift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"EZSwiftExtensions\"",
+					"-framework",
+					"\"RazzleDazzle\"",
+					"-ObjC",
+					"-weak_framework",
+					RevealServer,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alex.MyShift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -364,8 +382,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6A7K9VGHXX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyShift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"EZSwiftExtensions\"",
+					"-framework",
+					"\"RazzleDazzle\"",
+					"-ObjC",
+					"-weak_framework",
+					RevealServer,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alex.MyShift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
